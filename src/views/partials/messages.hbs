@@ -1,0 +1,45 @@
+{{#if success_msg}}
+<section class="login__modal">
+    <div class="login__bg">
+        <div class="login__modal-content">
+            <i class="uil uil-times login__modal-close"></i>
+
+            <div class="login__container container">
+                <h4 class="section__title">ESTADO</h4>
+                <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                        <i class="uil uil-check-circle services__modal-icon"></i>
+                        <p class="login__description">
+                            {{success_msg}}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span aria-hidden="true">&times;</span>
+    </div>
+</section>
+{{/if}}
+
+{{#if error_msg}}
+<section class="login__modal">
+    <div class="login__bg">
+        <div class="login__modal-content">
+            <i class="uil uil-times login__modal-close"></i>
+
+            <div class="login__container container">
+                <h4 class="section__title">ESTADO</h4>
+                <ul class="services__modal-services grid">
+                    <li class="services__modal-service">
+                        <i class="uil uil-exclamation-circle services__modal-icon"></i>
+                        <p class="login__description">
+                            {{error_msg}}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span aria-hidden="true">&times;</span>
+    </div>
+</section>
+{{/if}}

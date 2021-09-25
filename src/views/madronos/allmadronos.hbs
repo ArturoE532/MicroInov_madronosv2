@@ -1,0 +1,37 @@
+<section class="place section" id="madronos">
+    <h2 class="section__title">Administracion de plantas</h2>
+
+    <div class="place__container container grid">
+
+        {{#each madronos}}
+
+        <!--==================== PLACES CARD 1 ====================-->
+        <div class="place__card">
+            <img src="/img/1{{especie}}.jpg" alt="" class="place__img">
+
+            <div class="place__content">
+                <a href="/madronos/edit/{{_id}}">
+                    <span class="place__rating place__rating-icon">
+                        <i class="ri-pencil-fill"></i><!-- services__icon -->
+                    </span>
+                </a>
+
+                <div class="place__data">
+                    <h3 class="place__title">{{especie}}</h3>
+                    <br><br>
+                </div>
+            </div>
+
+            <form action="/madronos/delete/{{_id}}?_method=DELETE" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button class="button button--flex place__button">
+                    <span class="">Eliminar </span>
+                    <i class="ri-delete-bin-fill"></i>
+                </button>
+            </form>
+        </div>
+
+        {{/each}}
+
+    </div>
+</section>

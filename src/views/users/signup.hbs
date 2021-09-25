@@ -1,0 +1,32 @@
+<section class="subscribe section" id="signup">
+    <div class="subscribe__bg">
+        <div class="subscribe__container container">
+            <h2 class="section__title subscribe__title">Registro Nuevo</h2>
+            <p class="subscribe__description">Agregar Nuevo Administrador</p>
+
+            <form class="subscribe__form" action="/users/signup" method="POST">
+
+                <div class="subscribe__content">
+                    <label for="" class="subscribe__label">Nombre</label>
+                    <input type="text" class="subscribe__input" name="name" value="{{name}}" required>
+                </div>
+                <div class="subscribe__content">
+                    <label for="" class="subscribe__label">Correo Electronico</label>
+                    <input type="email" class="subscribe__input" name="email" value="{{email}}" required>
+                </div>
+                <div class="subscribe__content">
+                    <label for="" class="subscribe__label">Constraseña</label>
+                    <input type="password" class="subscribe__input" name="password" value="{{password}}" required>
+                </div>
+                <div class="subscribe__content">
+                    <label for="" class="subscribe__label">Confirmar Constraseña</label>
+                    <input type="password" class="subscribe__input" name="confirm_password" value="{{confirm_password}}" required>
+                </div>
+
+                <button class="subscribe__button button">
+                    Sign Up
+                </button>
+            </form>
+        </div>
+    </div>
+</section>

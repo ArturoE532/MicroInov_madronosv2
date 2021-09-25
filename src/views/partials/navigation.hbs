@@ -1,0 +1,61 @@
+<header class="header" id="header">
+
+    <nav class="nav container">
+        <a href="#" class="nav__logo">MicroInov</a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="/">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/nosotros">Nosotros</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/datos">Plantas</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/glosario">Glosario</a>
+                </li>
+                {{#if user}}
+                <li class="nav__item dropdown">
+                    <a class="nav__link" href="#" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Datos
+                        <i class="uil uil-angle-down"></i>
+                    </a>
+                    <ul class="nav__list dropdown__menu" aria-labelledby="navbarDropdown">
+                        <li class="nav__item"><a class="nav__link dropdown__item" href="/madronos">Todos los madroños</a></li>
+                        <li class="nav__item">
+                            <hr class="nav__link">
+                        </li>
+                        <li class="nav__item"><a class="nav__link dropdown__item" href="/madronos/tipo">Agregar nuevo</a></li>
+                        <li class="nav__item">
+                            <hr class="nav__link">
+                        </li>
+                        <li class="nav__item"><a class="nav__link dropdown__item" href="/users/logout">Logaut</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="/users/signup">Register</a>
+                </li>
+                {{else}}
+                <li class="nav__item">
+                    <a class="nav__link" href="/users/signin">Login</a>
+                </li>
+                {{/if}}
+            </ul>
+            <div class="nav__dark">
+                <!-- Theme change button -->
+                <span class="change-theme-name">Dark mode</span>
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+
+            <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-function-line"></i>
+        </div>
+    </nav>
+
+</header>

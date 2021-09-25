@@ -1,0 +1,100 @@
+<section class="subscribe section" id="login">
+    <div class="subscribe__bg">
+        <div class="subscribe__container container">
+            <h2 class="section__title subscribe__title">Editar Madroño</h2>
+
+            <form class="subscribe__form" action="/madronos/edit/{{madrono.id}}?_method=PUT" method="POST">
+
+                <input type="hidden" name="_method" value="PUT">
+
+                <div class="subscribe__content">
+                    <strong class="subscribe__label">NOMBRE:</strong>
+                    <input type="text" name="especie" class="subscribe__input" value="{{madrono.especie}}">
+                </div>
+
+                <div class="subscribe__content">
+                    <strong class="subscribe__label">ESTADO:</strong>
+                    <input type="text" name="estados" class="subscribe__input" value="{{madrono.estados}}">
+                </div>
+
+                <div class="subscribe__content">
+                    <strong class="subscribe__label">HABITO:</strong>
+                    <input type="text" name="habito" class="subscribe__input" value="{{madrono.habito}}">
+                </div>
+
+                <div class="subscribe__content datoc" value="{{madrono.corteza_de_la_parte_alta_del_tronco_y_ramas_principales}}">
+                    <strong class="subscribe__label">CORTEZA ALTA:</strong>
+                    <input type="text" name="corteza_de_la_parte_alta_del_tronco_y_ramas_principales" class="subscribe__input" value="{{madrono.corteza_de_la_parte_alta_del_tronco_y_ramas_principales}}">
+                </div>
+
+                <div class="subscribe__content dato" value="{{madrono.peciolos_y_ramillas}}">
+                    <strong class=" subscribe__label">PECIOLOS Y RAMILLAS:</strong>
+                    <input type="text" name="peciolos_y_ramillas" class="subscribe__input" value="{{madrono.peciolos_y_ramillas}}">
+                </div>
+
+                <div class="subscribe__content datoc" value="{{madrono.corteza_de_ramillas}}">
+                    <strong class="subscribe__label">CORTEZA RAMAS:</strong>
+                    <input type="text" name="corteza_de_ramillas" class="subscribe__input" value="{{madrono.corteza_de_ramillas}}">
+                </div>
+
+                <div class="subscribe__content datoc" value="{{madrono.peciolos}}">
+                    <strong class="subscribe__label">PECÍOLOS:</strong>
+                    <input type="text" name="peciolos" class="subscribe__input" value="{{madrono.peciolos}}">
+                </div>
+
+                <div class="subscribe__content dato" value="{{madrono.hojas_duración_y_textura}}">
+                    <strong class="subscribe__label">HOJAS (DURACION Y TEXTURA):</strong>
+                    <input type="text" name="hojas_duración_y_textura" class="subscribe__input" value="{{madrono.hojas_duración_y_textura}}">
+                </div>
+
+                <div class="subscribe__content dato" value="{{madrono.hojas_las_más_anchas}}">
+                    <strong class="subscribe__label">HOLAS (LAS MAS ANCHAS):</strong>
+                    <input type="text" name="hojas_las_más_anchas" class="subscribe__input" value="{{madrono.hojas_las_más_anchas}}">
+                </div>
+
+                <div class="subscribe__content dato" value="{{madrono.hojas_margen}}">
+                    <strong class="subscribe__label">HOJAS, MARGEN:</strong>
+                    <input type="text" name="hojas_margen" class="subscribe__input" value="{{madrono.hojas_margen}}">
+                </div>
+
+                <div class="subscribe__content">
+                    <strong class="subscribe__label">HOJAS, ENVES:</strong>
+                    <input type="text" name="hojas_enves" class="subscribe__input" value="{{madrono.hojas_enves}}">
+                </div>
+
+                <div class="subscribe__content dato" value="{{madrono.inflorescencia}}">
+                    <strong class="subscribe__label">INFLORESCENCIA:</strong>
+                    <input type="text" name="inflorescencia" class="subscribe__input" value="{{madrono.inflorescencia}}">
+                </div>
+
+                <div class="subscribe__content">
+                    <strong class="subscribe__label">FLORES:</strong>
+                    <input type="text" name="flores" class="subscribe__input" value="{{madrono.flores}}">
+                </div>
+
+                <button class="subscribe__button button">
+                    Guardar
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/444e1aeffa.js" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function () {
+        if ($(".dato").attr("value") === "") {
+            $('.dato').hide();
+        }
+        if ($(".datoc").attr("value") === "") {
+            $('.datoc').hide();
+        }
+        $('.zoom').hover(function () {
+            $(this).addClass('transition');
+        }, function () {
+            $(this).removeClass('transition');
+        });
+    });
+</script>
