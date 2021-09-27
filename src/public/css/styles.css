@@ -167,6 +167,7 @@ input {
 
 .main {
   overflow-x: hidden;
+  background-color: var(--body-color);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -566,7 +567,7 @@ input {
 }
 
 .project__bg{
-  background-color: var(--first-color-second);
+  background-color: var(--body-color);
   padding-top: 3rem;
 }
 
