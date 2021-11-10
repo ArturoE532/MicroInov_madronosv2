@@ -4,12 +4,12 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
-
+  
   /*========== Colors ==========*/
   /* Change favorite color to match images */
   /*Green dark 190 - Green 171 - Grren Blue 200*/
   --hue-color: 171;
-
+  
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 64%, 22%);
   --first-color-second: hsl(var(--hue-color), 64%, 22%);
@@ -23,7 +23,7 @@
   --white-color: #FFF;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
-
+  
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
   --title-font: 'Raleway', sans-serif;
@@ -34,11 +34,11 @@
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
-
+  
   /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
-
+  
   /*========== Margenes Bottom ==========*/
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
@@ -48,12 +48,12 @@
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
-
+  
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
-
+  
   /*========== Hover overlay ==========*/
   --img-transition: .3s;
   --img-hidden: hidden;
@@ -82,6 +82,34 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+#madroñoimg{
+  width: 250px; 
+  height: 250px;
+}
+#madroñoimg3{
+  width: 250px; 
+  height: 350px;
+}
+
+
+img.zoom {
+  position:relative; 
+  z-index:1;
+  width: 350px;
+  height: 200px;
+  /*-webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;*/
+}
+
+.transition {
+  -webkit-transform: scale(1.8); 
+  -moz-transform: scale(1.8);
+  -o-transform: scale(1.8);
+  transform: scale(1.8);
 }
 
 /*========== Button Dark/Light ==========*/
@@ -277,19 +305,19 @@ input {
   cursor: pointer;
 }
 
-  .dropdown{
+.dropdown{
   display:inline-block;
   text-align:center;
   color: var(--text-color-light);
   position:relative;
 }
-        
+
 .dropdown__menu{
   background-color: var(--first-color-second);
   display:none;
   color: #FFF;
   padding: var(--mb-1);
-  }
+}
 
 .dropdown:hover>.dropdown__menu{
   display:block;
@@ -363,7 +391,7 @@ input {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
-    font-family: 'Darker Grotesque', sans-serif;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 .home__social {
@@ -584,7 +612,7 @@ input {
 .project__title,
 .project__description{
   color: #FFF;
-   font-family: 'Delius', cursive;
+  font-family: 'Delius', cursive;
 }
 
 .project__img{
@@ -594,8 +622,7 @@ input {
   width: 180px;
   height: 180px;
   border-radius: 50px;
-  margin-top: 25px;
-
+  
 }
 
 /*=============== PLACES ===============*/
@@ -603,7 +630,7 @@ input {
 .place__img {
   height: 230px;
   width: 200px;
-  background-image: url("/img/asd.jpg");
+  background-image: url("/img/default.jpg");
 }
 
 .place__container {
@@ -854,10 +881,10 @@ input {
 }
 
 .subscribe__content{
-    background-color: var(--input-color);
-    border-radius: .5rem;
-    padding: .75rem 1rem .25rem;
-    margin: var(--mb-1);
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+  margin: var(--mb-1);
 }
 
 .subscribe__label{
@@ -890,50 +917,44 @@ input {
 
 /*==================== CONTACT ME ====================*/
 .contact__container{
-    row-gap: 3rem;
+  row-gap: 3rem;
 }
 
 .contact__information{
-    display: flex;
-    margin-bottom: var(--mb-2);
-}
-
-.contact__icon{
-    font-size: 2rem;
-    color: var(--first-color);
-    margin-right: var(--mb-0-75);
+  display: flex;
+  margin-bottom: var(--mb-2);
 }
 
 .contact__title{
-    font-size: var(--h3-font-size);
-    font-weight: var(--font-medium);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact__titled{
+  font-size: var(--h3-font-size);
+  font-weight: var(--biggest-font-size);
 }
 
 .contact__subtitle{
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  padding-left: 1rem;
 }
 
 .contact__content{
-    background-color: var(--input-color);
-    border-radius: .5rem;
-    padding: .75rem 1rem .25rem;
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: 1.75rem 2rem 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .contact__label{
-    background-color: var(--input-color);
-    color: var(--title-color);
+  background-color: var(--input-color);
+  color: var(--title-color);
 }
 
-.contact__input{
-    width: 100%;
-    background-color: var(--input-color);
-    color: var(--text-color);
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    border: none;
-    outline: none;
-    padding: .25rem .5rem .5rem 0;
+.contact__form{
+  width: 460px;
 }
 
 /*==================== TIP ME ====================*/
@@ -1069,7 +1090,7 @@ input {
     grid-template-columns: max-content;
     justify-content: center;
   }
-
+  
   .experience__content {
     padding: 0;
   }
@@ -1087,17 +1108,21 @@ input {
     padding: 0;
   }
   .services__container{
-      grid-template-columns: max-content;
-      justify-content: center;
+    grid-template-columns: max-content;
+    justify-content: center;
   }
   .services__content{
-      padding-right: 3.5rem;
+    padding-right: 3.5rem;
   }
   .services__modal{
-      padding: 0 .5rem;
+    padding: 0 .5rem;
   }
   .project__img{
     width: 200px;
+  }
+
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1110,11 +1135,15 @@ input {
   .tip__container,
   .project__container,
   .footer__container{
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .subscribe__form {
     width: 470px;
     margin: 0 auto;
+  }
+
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1122,7 +1151,7 @@ input {
   body{
     margin: 0;
   }
-
+  
   .nav{
     height: calc(var(--header-height) + 1.5rem);
   }
@@ -1149,15 +1178,15 @@ input {
   .change-theme-name{
     display: none;
   }
-
+  
   .change-theme{
     color: var(--white-color);
   }
-
+  
   .active-link::before{
     background-color: var(--white-color);
   }
-
+  
   .scroll-header .nav__link{
     color: var(--text-color);
   }
@@ -1170,7 +1199,7 @@ input {
   .scroll-header .change-theme{
     color: var(--text-color);
   }
-
+  
   .section{
     padding:  7rem 0 2rem;
   }
@@ -1178,7 +1207,7 @@ input {
   .section__subtitle{
     margin-bottom: 4rem;
   }
-
+  
   .home__container{
     height: 100vh;
     grid-template-rows: 1.8fr .5fr;
@@ -1195,7 +1224,7 @@ input {
   .home__info{
     bottom: 3rem;
   }
-
+  
   .about__container{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -1210,18 +1239,18 @@ input {
   .about__description{
     margin-bottom: var(--mb-2);
   }
-
+  
   .discover__container{
     width: 610px;
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   .discover__container,
   .place__container{
     padding-top: 2rem;
   }
-
+  
   .experience__overlay:nth-child(1){
     width: 363px;
     margin-right: 4rem;
@@ -1233,17 +1262,17 @@ input {
     text-align: initial;
   }
   .project__bg{
-      background: none;
+    background: none;
   }
   .project__container{
-      background-color: var(--first-color-second);
-      border-radius: 1rem;
-      padding: 3rem 2.5rem 0;
-      grid-template-columns: 1fr max-content;
-      column-gap: 3rem;
+    background-color: var(--first-color-second);
+    border-radius: 1rem;
+    padding: 2rem 2.5rem 1rem;
+    grid-template-columns: 1fr max-content;
+    column-gap: 3rem;
   }
   .project__data{
-      padding-top: .8rem;
+    padding-top: .8rem;
   }
   .login__container{
     background-color: var(--body-color);
@@ -1264,37 +1293,40 @@ input {
   .subscribe__input{
     padding: 0 .5rem;
   }
-
+  
   .services__container{
     grid-template-columns: repeat(3, 218px);
     justify-content: center;
   }
   .services__icon{
-      font-size: 2rem;
+    font-size: 2rem;
   }
   .services__content{
-      padding: 6rem 0 2rem 2.5rem;
+    padding: 6rem 0 2rem 2.5rem;
   }
   .services__modal-content{
-      width: 450px;
+    width: 450px;
   }
-
+  
   .footer__container{
     padding: 0 1rem;
     grid-template-columns: repeat(3, 1fr);
   }
   .footer__bg{
-      padding: 3rem 0 3.5rem;
+    padding: 3rem 0 3.5rem;
   }
   .footer__links{
-      flex-direction: row;
-      column-gap: 2rem;
+    flex-direction: row;
+    column-gap: 2rem;
   }
   .footer__socials{
-      justify-self: flex-end;
+    justify-self: flex-end;
   }
   .footer__copy{
-      margin-top: 4.5rem;
+    margin-top: 4.5rem;
+  }
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1308,8 +1340,8 @@ input {
     grid-template-columns: repeat(4, max-content);
     justify-content: center;
   }
-
-
+  
+  
   .home__container{
     grid-template-rows: 2fr .5fr;
   }
@@ -1324,14 +1356,14 @@ input {
   .home__info-img{
     width: 240px;
   }
-
+  
   .about__img-one{
     width: 240px;
   }
   .about__img-two{
     width: 290px;
   }
-
+  
   .discover__card{
     width: 237px;
   }
@@ -1345,7 +1377,7 @@ input {
   .discover__title{
     font-size: var(--h2-font-size);
   }
-
+  
   .experience__content{
     margin: var(--mb-1);
     column-gap: 3.5rem;
@@ -1358,7 +1390,7 @@ input {
     width: 220px;
     top: 3rem;
   }
-
+  
   .place__container{
     gap: 3rem 2rem;
   }
@@ -1371,17 +1403,17 @@ input {
   .services__container{
     grid-template-columns: repeat(3, 238px);
   }
-  .contact__form{
-    width: 460px;
-  }
   .contact__inputs{
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1024px;
+  }
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1390,15 +1422,15 @@ input {
   body {
     margin: 0;
   }
-
+  
   .home__container, 
   .home__img {
     height: 640px;
   }
-
+  
   .contact__inputs{
     grid-template-columns: repeat(2, 1fr);
-}
-
-
+  }
+  
+  
 }
