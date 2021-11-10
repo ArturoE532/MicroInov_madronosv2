@@ -363,6 +363,7 @@ input {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
+    font-family: 'Darker Grotesque', sans-serif;
 }
 
 .home__social {
@@ -583,11 +584,18 @@ input {
 .project__title,
 .project__description{
   color: #FFF;
+   font-family: 'Delius', cursive;
 }
 
 .project__img{
   width: 233px;
   justify-self: center;
+  border: 10px solid transparent;
+  width: 180px;
+  height: 180px;
+  border-radius: 50px;
+  margin-top: 25px;
+
 }
 
 /*=============== PLACES ===============*/
@@ -595,7 +603,7 @@ input {
 .place__img {
   height: 230px;
   width: 200px;
-  background-color: var(--first-color-alt);
+  background-image: url("/img/asd.jpg");
 }
 
 .place__container {
@@ -1296,6 +1304,11 @@ input {
     margin-left: auto;
     margin-right: auto;
   }
+  .place__container{
+    grid-template-columns: repeat(4, max-content);
+    justify-content: center;
+  }
+
 
   .home__container{
     grid-template-rows: 2fr .5fr;
@@ -1382,4 +1395,10 @@ input {
   .home__img {
     height: 640px;
   }
+
+  .contact__inputs{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
 }

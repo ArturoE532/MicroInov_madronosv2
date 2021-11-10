@@ -22,19 +22,24 @@
                     <input type="text" name="habito" class="subscribe__input" value="{{madrono.habito}}">
                 </div>
 
-                <div class="subscribe__content datoc" value="{{madrono.corteza_de_la_parte_alta_del_tronco_y_ramas_principales}}">
+                <div class="subscribe__content datoc"
+                    value="{{madrono.corteza_de_la_parte_alta_del_tronco_y_ramas_principales}}">
                     <strong class="subscribe__label">CORTEZA ALTA:</strong>
-                    <input type="text" name="corteza_de_la_parte_alta_del_tronco_y_ramas_principales" class="subscribe__input" value="{{madrono.corteza_de_la_parte_alta_del_tronco_y_ramas_principales}}">
+                    <input type="text" name="corteza_de_la_parte_alta_del_tronco_y_ramas_principales"
+                        class="subscribe__input"
+                        value="{{madrono.corteza_de_la_parte_alta_del_tronco_y_ramas_principales}}">
                 </div>
 
                 <div class="subscribe__content dato" value="{{madrono.peciolos_y_ramillas}}">
                     <strong class=" subscribe__label">PECIOLOS Y RAMILLAS:</strong>
-                    <input type="text" name="peciolos_y_ramillas" class="subscribe__input" value="{{madrono.peciolos_y_ramillas}}">
+                    <input type="text" name="peciolos_y_ramillas" class="subscribe__input"
+                        value="{{madrono.peciolos_y_ramillas}}">
                 </div>
 
                 <div class="subscribe__content datoc" value="{{madrono.corteza_de_ramillas}}">
                     <strong class="subscribe__label">CORTEZA RAMAS:</strong>
-                    <input type="text" name="corteza_de_ramillas" class="subscribe__input" value="{{madrono.corteza_de_ramillas}}">
+                    <input type="text" name="corteza_de_ramillas" class="subscribe__input"
+                        value="{{madrono.corteza_de_ramillas}}">
                 </div>
 
                 <div class="subscribe__content datoc" value="{{madrono.peciolos}}">
@@ -44,12 +49,14 @@
 
                 <div class="subscribe__content dato" value="{{madrono.hojas_duración_y_textura}}">
                     <strong class="subscribe__label">HOJAS (DURACION Y TEXTURA):</strong>
-                    <input type="text" name="hojas_duración_y_textura" class="subscribe__input" value="{{madrono.hojas_duración_y_textura}}">
+                    <input type="text" name="hojas_duración_y_textura" class="subscribe__input"
+                        value="{{madrono.hojas_duración_y_textura}}">
                 </div>
 
                 <div class="subscribe__content dato" value="{{madrono.hojas_las_más_anchas}}">
                     <strong class="subscribe__label">HOLAS (LAS MAS ANCHAS):</strong>
-                    <input type="text" name="hojas_las_más_anchas" class="subscribe__input" value="{{madrono.hojas_las_más_anchas}}">
+                    <input type="text" name="hojas_las_más_anchas" class="subscribe__input"
+                        value="{{madrono.hojas_las_más_anchas}}">
                 </div>
 
                 <div class="subscribe__content dato" value="{{madrono.hojas_margen}}">
@@ -64,7 +71,8 @@
 
                 <div class="subscribe__content dato" value="{{madrono.inflorescencia}}">
                     <strong class="subscribe__label">INFLORESCENCIA:</strong>
-                    <input type="text" name="inflorescencia" class="subscribe__input" value="{{madrono.inflorescencia}}">
+                    <input type="text" name="inflorescencia" class="subscribe__input"
+                        value="{{madrono.inflorescencia}}">
                 </div>
 
                 <div class="subscribe__content">
@@ -72,9 +80,32 @@
                     <input type="text" name="flores" class="subscribe__input" value="{{madrono.flores}}">
                 </div>
 
-                <button class="subscribe__button button">
-                    Guardar
-                </button>
+                <div class="services__modal">
+                    <div class="services__modal-content">
+                        <ul class="services__modal-services grid">
+                            <li class="services__modal-service">
+                                <p>¿Seguro de editar?</p>
+                            </li>
+                            <li class="services__modal-service">
+                                <button class="button button--flex button--link button--small servicesbn">
+                                    <i class="uil uil-check services__modal-icon"></i>
+                                    <span class="">Si </span>
+                                </button>
+                            </li>
+                            <li class="services__modal-service">
+                                <span
+                                    class="button button--flex button--link button--small  services__close servicesbn">
+                                    <i class="uil uil-times services__modal-icon"></i>
+                                    <span class="">No </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="subscribe__button button services__button">
+                    <span class="">Guardar</span>
+                </span>
             </form>
         </div>
     </div>

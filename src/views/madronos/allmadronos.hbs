@@ -22,16 +22,44 @@
                 </div>
             </div>
 
+
             <form action="/madronos/delete/{{_id}}?_method=DELETE" method="POST">
                 <input type="hidden" name="_method" value="DELETE">
-                <button class="button button--flex place__button">
+
+            
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <p>¿Seguro de eliminar este dato?</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <button class="button button--flex button--link button--small ">
+                                        <i class="uil uil-check services__modal-icon"></i>
+                                        <span class="">Si </span>
+                                    </button>
+                                </li>
+                                <li class="services__modal-service">
+                                    <span class="button button--flex button--link button--small  services__close servicesbn">
+                                        <i class="uil uil-times services__modal-icon"></i>
+                                        <span class="">No </span>
+                                    </span>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                
+
+                <span class="button button--flex place__button services__button">
                     <span class="">Eliminar </span>
                     <i class="ri-delete-bin-fill"></i>
-                </button>
+                </span>
             </form>
         </div>
 
         {{/each}}
+
 
     </div>
 </section>

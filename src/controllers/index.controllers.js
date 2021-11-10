@@ -15,9 +15,18 @@ indexCtrl.renderGlosario = (req, res) => {
     res.render ('glosario')
 };
 
-indexCtrl.renderDatos = async (req, res) => {
-    const madronos = await Madrono.find({});
-    res.render('datos', { madronos });
+indexCtrl.renderTipoDato = (req, res) => {
+    res.render ('tipodato');
+};
+
+indexCtrl.renderDatos1 = async (req, res) => {
+    const madronos = await Madrono.find({especie:/^A./});
+    res.render('datos1', { madronos });
+};
+
+indexCtrl.renderDatos2 = async (req, res) => {
+    const madronos = await Madrono.find({especie:/^C./});
+    res.render('datos2', { madronos });
 };
 
 indexCtrl.renderInfoMadronos = async (req, res) => {
