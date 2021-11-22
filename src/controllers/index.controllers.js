@@ -29,9 +29,13 @@ indexCtrl.renderDatos2 = async (req, res) => {
     res.render('datos2', { madronos });
 };
 
-indexCtrl.renderInfoMadronos = async (req, res) => {
+indexCtrl.renderInfoMadronosA = async (req, res) => {
     const madrono = await Madrono.findById(req.params.id);
-    res.render('info', { madrono });
+    res.render('infoA', { madrono });
+};
+indexCtrl.renderInfoMadronosC = async (req, res) => {
+    const madrono = await Madrono.findById(req.params.id);
+    res.render('infoC', { madrono });
 };
 
 module.exports = indexCtrl;
