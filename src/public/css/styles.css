@@ -366,10 +366,18 @@ input {
 }
 
 .home__data-subtitle, 
-.home__data-title, 
 .home__social-link, 
 .home__info {
   color: var(--white-color);
+  font-family: 'Comfortaa', cursive;
+
+}
+
+.home__data-titlee{
+  color: var(--white-color);
+  font-size: 70px;
+  font-family: 'Mali', cursive;
+ 
 }
 
 .home__data-subtitle {
@@ -740,6 +748,14 @@ input {
   color: #FFF;
 }
 
+.services__titlee{
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-1);
+  font-weight: var(--font-medium);
+  color: rgb(93, 201, 21);
+  font-family: 'Mali', cursive;
+}
+
 .services__button{
   cursor: pointer;
   font-size: var(--small-font-size);
@@ -776,6 +792,7 @@ input {
 
 .services__modal-services{
   row-gap: 1rem;
+  font-family: 'Mali', cursive;
 }
 
 .services__modal-service{
@@ -858,6 +875,8 @@ input {
 .skills__name{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  font-family: 'Mali', cursive;
+
 }
 
 .skills__bar,
@@ -1053,6 +1072,8 @@ input {
   border-radius: .5rem;
   padding: .75rem 1rem .25rem;
   margin: var(--mb-1);
+  font-family: 'Neucha', cursive;
+  letter-spacing: 1px;
 }
 
 .subscribe__label{
@@ -1060,6 +1081,8 @@ input {
   color: var(--title-color);
   padding-left: var(--mb-0-25);
   width: 100%;
+  font-family: 'Neucha', cursive;
+  letter-spacing: 1px;
 }
 
 .subscribe__input {
@@ -1081,6 +1104,7 @@ input {
 .subscribe__button{
   text-align: center;
   width: 100%;
+ 
 }
 
 /*==================== CONTACT ME ====================*/
@@ -1158,7 +1182,7 @@ input {
 }
 
 .footer__container{
-  row-gap: 3.5rem;
+  row-gap: 2.5rem;
 }
 
 .footer__bg{ 
@@ -1169,20 +1193,69 @@ input {
 .footer__title{
   font-size: var(--h1-font-size);
   margin-bottom: var(--mb-0-25);
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+
+.footer__titlee{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+.footeer__titlee{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  color:rgb(93, 201, 21)
 }
 
 .footer__subtitle{
   font-size: var(--small-font-size);
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
 }
 
 .footer__links{
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  font-family: 'Mali', cursive;
+ 
 }
+.footer__linkss{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  font-family: 'Mali', cursive;
+  text-align: center;
+}
+
+.footer__linksss{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  font-family: 'Mali', cursive;
+  text-align: center;
+  color: #FFF;
+}
+
+.foooter__linksss{
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  font-family: 'Mali', cursive;
+  text-align: justify;
+  color: rgb(252, 252, 252);
+  font-size: 20px;
+}
+
+
 
 .footer__link:hover{
   color: var(--first-color-lighter);
+  font-family: 'Mali', cursive;
 }
 
 .footer__social{
@@ -1287,6 +1360,7 @@ input {
   }
   .services__modal{
     padding: 0 .5rem;
+    font-family: 'Mali', cursive;
   }
   .project__img{
     width: 200px;

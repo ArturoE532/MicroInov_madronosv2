@@ -1,46 +1,49 @@
 <header class="header" id="header">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Neucha&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <nav class="nav container">
-        <a href="#" class="nav__logo">MicroInov</a>
+        <a href="#" class="footer__title">MicroInov</a>
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a class="nav__link" href="/">Inicio</a>
+                    <a class="footer__linksss" href="/">Inicio</a></i>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="/nosotros">Nosotros</a>
+                    <a class="footer__linksss" href="/nosotros">Nosotros</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="/tipodato">Plantas</a>
+                    <a class="footer__linksss" href="/tipodato">Plantas</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="/glosario">Glosario</a>
+                    <a class="footer__linksss" href="/glosario">Glosario</a>
                 </li>
                 {{#if user}}
                 <li class="nav__item dropdown">
-                    <a class="nav__link" href="#" role="button"
+                    <a class="footer__linksss" href="#" role="button"
                         data-toggle="dropdown" aria-expanded="false">
                         Datos
                         <i class="uil uil-angle-down"></i>
                     </a>
                     <ul class="nav__list dropdown__menu" aria-labelledby="navbarDropdown">
-                        <li class="nav__item"><a class="nav__link dropdown__item" href="/madronos">Todos los madroños</a></li>
+                        <li class="footer__linksss"><a class="nav__link dropdown__item" href="/madronos">Todos los madroños</a></li>
                         <li class="nav__item">
                             <hr class="nav__link">
                         </li>
-                        <li class="nav__item"><a class="nav__link dropdown__item" href="/madronos/tipo">Agregar nuevo</a></li>
+                        <li class="footer__linksss"><a class="nav__link dropdown__item" href="/madronos/tipo">Agregar nuevo</a></li>
                         <li class="nav__item">
                             <hr class="nav__link">
                         </li>
-                        <li class="nav__item"><a class="nav__link dropdown__item" href="/users/logout">Logaut</a></li>
+                        <li class="footer__linksss"><a class="nav__link dropdown__item" href="/users/logout">Cerrar sesión</a></li>
                     </ul>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link" href="/users/signup">Register</a>
+                    <a class="footer__linksss" href="/users/signup">Nuevo registro</a>
                 </li>
                 {{else}}
                 <li class="nav__item">
-                    <a class="nav__link" href="/users/signin">Login</a>
+                    <a class="footer__linksss" href="/users/signin">Iniciar sesión</a>
                 </li>
                 {{/if}}
             </ul>

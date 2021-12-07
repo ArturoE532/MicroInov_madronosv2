@@ -16,7 +16,7 @@ usersCtrl.signup = async (req, res) => {
         errors.push({ text: 'Las contraseñas no coinciden' });
     }
     if (password.length < 4) {
-        errors.push({ text: 'La contraseña debe tener almenos 4 caracteres' });
+        errors.push({ text: 'La contraseña debe tener almenos 4 carácteres' });
     }
     if (errors.length > 0) {
         res.render('users/signup', {
@@ -29,7 +29,7 @@ usersCtrl.signup = async (req, res) => {
     } else {
         const emailUser = await User.findOne({ email: email });
         if (emailUser) {
-            req.flash('error_msg', 'El correo ya esta registrado');
+            req.flash('error_msg', 'El correo ya está registrado');
             res.redirect('/users/signup');
         } else {
             const newUser = new User({ name, email, password });
@@ -53,7 +53,7 @@ usersCtrl.signin = passport.authenticate('local', {
 
 usersCtrl.logout = (req, res) => {
     req.logout();
-    req.flash('success_msg', 'Cesion cerrada');
+    req.flash('success_msg', 'Sesión cerrada');
     res.redirect('/users/signin');
 }
 
